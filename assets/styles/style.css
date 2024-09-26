@@ -1,0 +1,55 @@
+:root {
+  --ff-ramaraja-reg: "Ramaraja", serif;
+  --ff-ibm-reg: "IBM Plex Mono", monospace;
+  --ff-waterFall-reg: "Waterfall", cursive;
+  --ff-glassAntiqua-reg: "Glass Antiqua", cursive;
+  --ff-sevillana-reg: "Sevillana", cursive;
+
+  --fw-reg: 400;
+  --fw-bold: 700;
+
+  --clr-light: #fff;
+  --clr-text: #000000;
+  --clr-accent: #f0f0f0;
+  --clr-org: #db3317;
+
+  --fs-body: 1rem;
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+/* ------------------- */
+/* General Styles      */
+/* ------------------- */
+
+body {
+  background-color: var(--clr-light);
+  color: var(--clr-text);
+  font-family: var(--ff-ramaraja-reg);
+  font-size: var(--fs-body);
+}
+

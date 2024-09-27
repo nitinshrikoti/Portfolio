@@ -8,12 +8,17 @@
   --fw-reg: 400;
   --fw-bold: 700;
 
+  --fs-1: 3rem;
+  --fs-2: 2.25rem;
+  --fs-3: 1.625rem;
+  --fs-4: 1.25rem;
+  --fs-body: 1rem;
+
   --clr-light: #fff;
   --clr-text: #000000;
   --clr-accent: #f0f0f0;
   --clr-org: #db3317;
 
-  --fs-body: 1rem;
 }
 
 /* ------------------- */
@@ -42,6 +47,14 @@
   border: 0;
 }
 
+a {
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+}
+
 /* ------------------- */
 /* General Styles      */
 /* ------------------- */
@@ -49,7 +62,30 @@
 body {
   background-color: var(--clr-light);
   color: var(--clr-text);
-  font-family: var(--ff-ramaraja-reg);
+  font-family: var(--ff-glassAntiqua-reg);
   font-size: var(--fs-body);
 }
 
+/* Navbar */
+
+.navbar {
+  height: 15vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: var(--fs-3);
+}
+
+.nav-links a:hover {
+  color: var(--clr-org);
+  text-decoration: underline;
+  text-decoration-color: var(--clr-org);
+  -moz-text-decoration-color: var(--clr-org);
+}
+
+.logo {
+  font-size: var(--fs-2);
+  cursor: default;
+}

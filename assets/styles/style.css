@@ -48,7 +48,7 @@
 }
 
 .container {
-  padding-top: 4vh;
+  padding-top: 6vh;
   height: 96vh;
   margin: 0 10rem;
   min-height: fit-content;
@@ -80,10 +80,14 @@ body {
 /* Navbar */
 
 .navbar {
+  z-index: 10;
+  position: sticky;
+  top: 0;
   height: 11vh;
   justify-content: space-around;
   align-items: center;
   line-height: normal;
+  backdrop-filter: blur(0.5rem);
 }
 
 .nav-links a {
@@ -146,7 +150,7 @@ body {
     position: absolute;
     right: 1rem;
     top: 4rem;
-    gap: .2rem;
+    gap: 0.2rem;
     flex-direction: column;
     width: fit-content;
     align-items: center;
@@ -186,15 +190,17 @@ body {
 /* profile */
 
 #profile {
+  position: relative;
   display: flex;
   justify-content: center;
   height: 85vh;
-  gap: 6rem;
+  gap: 21.5rem;
 }
 
 .pic-container {
   display: flex;
   height: 400px;
+  width: 282px;
   margin: auto 0;
 }
 
@@ -215,6 +221,7 @@ body {
 .title {
   font-size: var(--fs-1);
   font-family: var(--ff-sevillana-reg);
+  margin-bottom: 2rem;
 }
 
 .socials-container {
@@ -271,4 +278,83 @@ body {
 }
 .btn-1:hover {
   border: var(--clr-light) 0.1rem solid;
+}
+
+/* about */
+
+#about {
+  position: relative;
+}
+
+.section-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  height: 80%;
+}
+
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.about-containers {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 2rem;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  flex: 1;
+  border-radius: 2rem;
+  border: var(--clr-gry) 0.01rem solid;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 3rem;
+}
+
+/* experience */
+
+#experience {
+  position: relative;
+}
+
+.about-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 5rem;
+}
+.article-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 65%;
+  padding: 2rem 0;
+}
+
+.article-container article {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: var(--clr-gry) 0.01rem solid;
+}
+
+/* projects */
+#projects {
+  position: relative;
 }

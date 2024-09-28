@@ -30,10 +30,11 @@
       <div class="logo">Nitin</div>
 
       <ul class="nav-links flex" role="list">
+        <li><a class="nav-link" href="#profile">home</a></li>
         <li><a class="nav-link" href="#about">about</a></li>
         <li><a class="nav-link" href="#experience">experience</a></li>
         <!-- <li><a class="nav-link" href="#projects">projects</a></li> -->
-        <li><a class="nav-link" href="#contact">contact</a></li>
+        <!-- <li><a class="nav-link" href="#contact">contact</a></li> -->
       </ul>
 
       <div class="menu">
@@ -57,8 +58,8 @@
           >
             Download CV
           </button>
-          <button class="btn btn-2" onclick="location.href='#contact'">
-            Contact
+          <button class="btn btn-2">
+            <a href="mailto:nitinshrikoti1@gmail.com">Contact</a>
           </button>
         </div>
         <div class="socials-container">
@@ -133,7 +134,7 @@
               />
               <div>
                 <h3>HTML</h3>
-                <p>Experienced</p>
+                <p>Basic</p>
               </div>
             </article>
             <article>
@@ -144,7 +145,7 @@
               />
               <div>
                 <h3>CSS</h3>
-                <p>Experienced</p>
+                <p>Basic</p>
               </div>
             </article>
             <article>
@@ -166,22 +167,39 @@
               />
               <div>
                 <h3>Git</h3>
-                <p>Intermediate</p>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="assets/images/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>SQL</h3>
+                <p>Basic</p>
               </div>
             </article>
           </div>
         </div>
       </div>
-      <img
-        src="assets/images/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#projects'"
-      />
     </section>
-    <section id="contact" class="container">
-      <h1 class="title">Contact</h1>
-      <img src="assets/images/arrow.png" alt="Arrow icon" class="icon arrow" />
-    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-sec-2">
+          <h3>Local Time</h3>
+          <ul role="list">
+            <li><span id="time"></span></li>
+          </ul>
+        </div>
+        <div class="footer-sec-1">
+          <h3>Version</h3>
+          <ul role="list">
+            <li>2024</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

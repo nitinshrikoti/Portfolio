@@ -13,3 +13,7 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
   navLinks.classList.remove("hide");
 
 }))
+
+// current time
+var today = new Date();
+document.getElementById("time").innerHTML = today;
